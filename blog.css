@@ -1,0 +1,152 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ccbdbd, #e6e6e6); /* Soft light grey gradient */
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #404040; /* Dark gray for the header */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6600; /* Orange for hover effect */
+}
+
+header .intro h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header .intro p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
+    border-radius: 10px;
+    margin: 30px auto; /* Increased spacing */
+    max-width: 900px; /* Limit width */
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #404040;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* About Me Section Specific Styles */
+#about p {
+    margin: 0 20px; /* Added margin to create space from edges */
+}
+
+/* Project Section Styles */
+.project-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center;
+    margin-top: 20px; /* Additional space */
+}
+
+.project {
+    background-color: #f4f4f4;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(45% - 20px); /* Two projects side by side */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+}
+
+.project h3 {
+    color: #ff6600; /* Title color */
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Certification Section Styles */
+#certifications ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#certifications li {
+    margin: 10px 0; /* Space between certification items */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #404040; /* Dark gray for the footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ff6600; /* Orange for hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .project {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
